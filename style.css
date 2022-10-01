@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, hsl(0, 13%, 95%), hsl(0, 13%, 95%), hsl(0, 13%, 95%));
+    overflow: hidden;
+    
+}
+
+.wrap {
+    position: relative;
+    width: 70%;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.text {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+
+.password {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+
+.container {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    height: 60%;
+    
+}
+
+.btn {
+    display: block;
+    width:  300px;
+    height: 50px;
+    border: 1px solid #dedee6;
+    padding: 10px 40px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: .3s linear;
+    
+}
+
+.btn:hover {
+    background-color: #dedee6;
+
+}
+
+.fab {
+    padding-right: 10px;
+    font-size: 26px;
+    
+
+}
+
+.fa-apple {
+    font-size: 32px;
+}
+
+.line-wrap {
+    position: relative;
+    top: 15%;
+    left: 0;
+}
+
+.line-1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background-color: #3e6831;
+}
+
+.or {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.line-2 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 100px;
+    height: 2px;
+    background-color: #dedee6;
+}
+
+.bottom-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+
+input {
+    width:  300px;
+    height: 50px;
+    padding: 10px 40px;
+    font-size: 16px;
+    border: 1px solid #dedee6;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+input:hover {
+    border: 2px solid #dedee6;
+
+}
+
+.submit {
+    margin-top: 10px;
+    width: 300px;
+    height: 50px;
+    text-transform: uppercase;
+    letter-spacing:  2px;
+    background: linear-gradient(90deg, #8fe696, #5fba7a);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-size: 16px;
+    color: #fff;
+    transition: .3s;
+}
+
+.submit:hover {
+    border: 2px solid #5fba82;
+}
+
+.pointer {
+    cursor: pointer;
+}
+.google-map {
+    border-radius: 300%;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    
+  }
+
+  .google-map iframe {
+    border: 0;
+    width: 300px;
+    height: 300px;
+    
+  }
