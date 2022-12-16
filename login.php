@@ -9,14 +9,27 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
         crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
+
     <title>Inicio de sesión</title>
 </head>
 <body >
+    <?php
+    session_start();
+    if (isset($_SESSION['message_l'])): ?>
+
+    <div class="alert alert-<?=$_SESSION['msg_type_l']?>">
+
+        <?php
+            echo $_SESSION['message_l'];
+            unset($_SESSION['message_l']);
+        ?>
+    </div>
+    <?php endif ?>
     <div class="wrap">
         <h1 class="text" style="font-size: 20px;">Para continuar, <br> por favor inicia sesión</h1>
         <div class="container">
-            <span class="btn pointer"><i class=""></i></span>
-            <span class="btn pointer"><i class=""></i></span>
+            
+            <span class="btn pointer"><i class=""></i>crear cuenta</span>
 
             <div class="line-wrap">
                 <div class="line-1"></div>

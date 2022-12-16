@@ -45,6 +45,10 @@ body {
     right: 20%;
     height: 60%;
     
+    
+}
+.container #cont_tablas { 
+    gap: 1em;
 }
 
 .btn {
