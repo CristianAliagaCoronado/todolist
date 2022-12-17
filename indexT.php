@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+
 if (!isset($_SESSION['correo'])) {
     header('Location: login.php');
 }
@@ -20,6 +22,12 @@ if (!isset($_SESSION['correo'])) {
     </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></script>
+    <?php
+    if($_SESSION['tema']=='oscuro'){
+        echo '<link rel="stylesheet" href="oscuro.css">';
+    }
+    ?>
+    
 </head>
 
 <body background="fondo2.jpg">
@@ -60,13 +68,14 @@ if (!isset($_SESSION['correo'])) {
         //pre_r($result);
         ?>
         <a href="cerrar_session.php" class="btn btn-danger float-right">cerrar sesion</a>
+        <a href="modo_oscuro.php" class="oscuro btn btn-primary float-right">tema</a>
         <p><b>
                 <div class="bottom-container"><?php echo $_SESSION['nombre']; ?></div>
             </b></p>
         <div class="row  ">
 
             <!--etiqueta-->
-            <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+            <div class=" bordeos d-flex flex-column flex-shrink-0 p-3 " style="width: 280px;" >
                 <div class="row justify-content-center">
                     <form action="process.php" method="POST">
                         <input type="hidden" name="eti_id" value="<?php echo $id; ?>">
