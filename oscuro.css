@@ -1,0 +1,11 @@
+body{
+    background-image: url("fondo1.png");
+background-color: rgb(35, 35, 35);
+color: white;
+}
+.oscuro{
+    background-color: rgb(96, 96, 96);
+}
+.bordeos{
+    border: 1px solid white;
+}
